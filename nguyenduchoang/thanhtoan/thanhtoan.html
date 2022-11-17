@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh_toan</title>
+    <link rel="stylesheet" href="css/style-tt.css">
+</head>
+<body>
+    <h1>Thanh Toán</h1>
+    <table>
+        <tr class="a">
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Remove</th>
+        </tr>
+        <tr>
+            <td id="anh1"><img class="b" src="img/iphone_11_1661318461076_1661318461412_1661318461412.webp" align="middle"> Iphone 11</td>
+            <td class="c">
+                <input class="minus is-form" type="button" value="-">
+                <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" >
+                <input class="plus is-form" type="button" value="+">
+            </td>
+            <td class="c">25.000.000vnd</td>
+            <td class="c">25.000.000vnd</td>
+            <td class="c"><input type="submit"value="Reset"></td>
+        </tr>
+        <tr id="total">
+            <td colspan="5"><h2>Total:25.000.000vnd</h2></td>
+        </tr>
+    </table>
+    
+    <section id="ttcanhan">
+       <section id="ttcn">
+            <h3>1.Thông tin cá nhân</h3>
+            <div><h4>Họ tên:</h4><input class="input" type="text" placeholder="Nhập họ tên..."></div><br>
+            <div><h4>Địa chỉ:</h4><input class="input" type="text" placeholder="Nhập địa chỉ..."></div><br>
+            <div><h4>E-mail:</h4><input class="input" type="text" placeholder="Nhập e-mail..."></div><br>
+            <div><h4>Điện thoại:</h4><input class="input" type="text" placeholder="Nhập số điện thoại..."></div><br>
+            <form method="get" action="">
+                <h4>Thành phố:</h4>
+                     <select class="input" name="job" id="">
+                        <option value="0">Chọn thành phố</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">TP.HCM</option>
+                        <option value="3">Đà Nẵng</option>
+                        <option value="3">Hải Phòng</option>
+                        <option value="3">Cần Thơ</option>
+                        <option value="3">Nghệ An</option>
+                        <option value="3">Cà Mau</option>
+                        <option value="3">Hà Giang</option>
+                        <option value="3">Kiên Giang</option>
+                        <option value="3">Phú Thọ</option>
+                        <option value="3">Tuyên Quang</option>
+                        <option value="3">Bắc ninh</option>
+                     </select>
+            </form><br>
+            <form method="get" action="">
+                <h4>Quốc gia:</h4>
+                     <select class="input" name="job" id="">
+                        <option value="0">Chọn quốc gia</option>
+                        <option value="1">Việt nam</option>>
+                     </select>
+            </form><br>
+            <div><h4>Zip code:</h5><input class="input" type="text" placeholder="Nhập code..."></div><br>
+       </section>
+       <section id="pttt">
+            <div><h3>2.Phương thức thanh toán</h3></div>
+            <div>
+                    <input type="radio" name="gender" value="0">
+                    <label for="gender"><b>Chuyển Khoản Ngân Hàng Commonwealth (Không Mất Phí Thanh Toán)</b></label><br>
+                    <p class="ttnn">Thông tin người nhận</p>
+                    <ul id="thongtinnn">
+                        <li>Name: Nguyễn Đức Hoàng</li>
+                        <li>BSB: 063-138</li>
+                        <li>Acccount Number: 0388937608</li>
+                    </ul>
+            </div>
+                
+            <div>
+                    <input type="radio" name="gender" value="0">
+                    <label for="gender"><b>Thanh Toán Onecom: Thanh Toán Bằng Thẻ Visa Hoặc Master Card (Phí Thanh Toán 0,29$)</b></label><br><br>
+            </div>
+            <div>
+                    <input type="radio" name="gender" value="0">
+                    <label for="gender"><b>Thanh Toán PayPal(Phí Thanh Toán 0,29$)</b></label><br><br>
+            </div>
+            <div>
+                    <input type="radio" name="gender" value="0">
+                    <label for="gender"><b>Đổi Thẻ</b></label><br><br>
+            </div>
+
+            <b>Sale Currencys</b><br><br>
+            <select name="" id="sale">
+                <option value="0">select...</option>
+                <option value="0">Sale 5%</option>
+            </select>
+        </section>
+
+    </section>
+    <div id="cuoi">
+        <button class="cuoi1" type="submit">Mua thêm</button>
+        <button class="cuoi1" type="submit">Thanh toán</button>
+    </div>
+
+</body>        
+</html>

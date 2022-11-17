@@ -1,0 +1,86 @@
+h1{
+    color: red;
+    border-bottom: solid 3px;
+}
+#anh1{
+    width: 500px;
+    vertical-align: left;
+}
+.b{
+    width: 200px;
+    height: 100px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.a{    
+    height: 40px;
+    background-color: rgb(206, 204, 204);
+}
+.c{
+    text-align: center;
+}
+.input-qty{
+    width: 40px;
+    border: none;
+}
+h2{
+    font-weight: bolder;
+    text-align: right;
+    margin-right: 20px;
+}
+span{
+    position: absolute;
+    padding-top: 50px;
+}
+#total{
+    border: groove;
+}
+#ttcanhan{
+    width: 100%;
+    height: 500px;
+
+}
+#ttcn{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+#pttt{
+    width: 50%;
+    display: inline-block;
+    float: left;
+    line-height: 26px;
+}
+.input{
+    margin-left: 50px;
+    width: 65%;
+}
+h4{
+    display: inline-block;
+    line-height: 1px;
+    width: 100px;
+}
+#sale{
+    width: 90%;
+}
+.ttnn{
+    margin-left: 20px;
+}
+#thongtinnn{
+    margin-left: 20px;
+}
+#cuoi{
+    margin-left: 440px;
+}
+.cuoi1{
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: larger;
+    background-color: red;
+    color: white;
+    border-style: hidden;
+    
+}

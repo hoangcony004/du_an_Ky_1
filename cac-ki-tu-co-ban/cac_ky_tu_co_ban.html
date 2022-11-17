@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI CỦA HOÀNG</title>
+</head>
+<body>
+    <h1>CÁC KÍ TỰ HTML</h1>
+        
+       <b>hello</b> chu in dam <br></br>
+        <i>hello</i> chu in nghieng <br></br>
+        <u>hello</u> chu gach chan  <br></br>
+        <s>hello</s> chu gach giua <br></br>
+        <tt>hello</tt> chu danh may <br></br>
+        <samp>hello</samp> tag kieu chu danh may <br></br>
+        <sub>hello</sub> tag chi so duoi <br></br>
+        <sup>hello</sup> tag chi so tren <br></br>
+    <h4>danh sach</h4>
+    <ul>
+        <li type="square">hello</li> dau hinh vuong <br></br>
+        <li type="disk">bai 1</li> dau hinh tron <br></br>
+        <li type="circle">bai 2</li> dau hinh tron mơ <br></br>
+    </ul>
+    <ol>
+        <li type="A">hello</li> ky tu chu hoa <br></br>
+        <li type="a">hello</li> ky tu chu thuong <br></br>
+        <li type="I">hello</li> chu so la ma dang viet hoa <br></br>
+        <li type="i">hello</li> chu so la ma dang chu thuong <br></br>
+        <li type="1">hello</li> thiet lap kieu so <br></br>
+        <li start="n">hello</li> tao gia tri bat dau danh sach la n <br></br>
+    </ol>
+    <h3>thẻ định dạng văn bản, kiểu chữ</h3>
+    <p align="right">căn lề phải</p>
+    <p align="left">căn lề trái</p>
+    <p align="center">căn lề trung tâm</p>
+    <p dir="ltr">hướng của văn bản từ trái qua</p>
+    <p dir="rtl">hướng của văn bản từ phải qua</p><br><br>
+
+    <h3>gắn đường link</h3>
+        <a href="http://facebook.com" title="text">facebook</a><br><br>
+
+    <h3>chen anh</h3> 
+    <img src="img/anh1.jpg" width="300" height="150"> width chiều rộng; height chiều cao
+        <p>align="top" vb hiển thị ngang với phần trên của bức ảnh</p>
+        <p>align="middle" vb hiển thị giữa với phần trên của bức ảnh</p>
+        <p>align="top" vb hiển thị ngang với phần dưới của bức ảnh</p>
+
+    <h3>chen am thanh</h3>
+    <audio src="audio/TheSimpleILoveYou-ACEMusic_qbnf.mp3" controls></audio><br><br>
+
+    <h3>chen video</h3>
+    <video controls>
+        <source src="video/từ cửu môn hồi ức.mp4" type="video/mp4">
+    </video>
+
+    </video>
+
+    <h3>taobang</h3>
+    <p>colspan = " " :gộp cột</p>
+    <p>rowspan = " " :gộp hàng</p>
+    <table>
+        <table border="1" cellspacing="5" >
+            <tr>
+              <th >ĐĂNG NHẬP</th>
+      
+            </tr>
+            <tr>
+              <td>Username:<input type="text"><br></td>
+            </tr>
+            <tr>
+              <td>Password:<input type="password"name=""></td>
+            </tr>
+            <tr>
+              <th><input type="submit"value="Reset">
+                  <button>Ok</button></th>
+            </tr>
+       </table>
+    </table> 
+    <br></br>
+    <h2>checkbox</h2>
+        <h4>Đằn kí thông tin người dùng</h4>
+        <p>checked="checked" tự động tích</p>
+        <form  method="get" action="">
+            <b>Sở thích của bạn: </b>
+            <input type="checkbox" name="hobbies" value="0" />
+            <label for="gender">Âm nhạc</label>
+            <input type="checkbox" name="hobbies" value="0" />
+            <label for="gender">Chơi game</label>
+        </form><br><br><br>
+        <h4>Đăng kí thông tin người sử dụng</h4>
+            <b>Giới tính: </b>
+            <input type="radio" name="gender" value="0">
+            <label for="gender">Nam</label>
+            <input type="radio" name="gender" value="0">
+            <label for="gender">Nữ</label>
+            <input type="radio" name="gender" value="0">
+            <label for="gender">Bede</label><br><br><br><br>
+            <b>Độ tuổi: </b>
+            <input type="radio" name="gender" value="0">
+            <label for="gender">Dưới 13 tuổi</label>
+            <input type="radio" name="gender" value="0">
+            <label for="gender">Từ 13 đến 17 tuổi...</label><br><br><br>
+
+            <h4>đăng kí thông tin người sử dụng</h4>
+            <form method="get" action="">
+                <input type="button" name="btnButton"/>
+                <input type="submit" name="btnSubmit"/>
+                <input type="reset" name="btnReset">
+
+            </form><br><br><br>
+            <h4>danh sách với thẻ select</h4>
+            <form method="get" action="">
+                <b>Chuyên nghành của bạn: </b>
+                <select name="job" id="">
+                        <option value="o">chọn nghành nghề</option>
+                        <option value="1">Công nghệ thông tin</option>
+                        <option value="2">Thiết kế đồ họa</option>
+                        <option value="3">Nghành khác</option>
+                </select>
+            </form><br><br><br>
+            <h3>vùng nhập văn bản textarea</h3>
+            <form method="get" action="">
+                <b>Mô tả bản thân: </b>
+                <textarea name="descriptionx" id="" cols="15" rows="2"></textarea>
+            </form><br><br><br>
+
+        thanh bieu dien trang thai
+        <progress min="0" max="100" value="50"></progress>
+    <h3>a liên kết tập tin cục bộ</h3>
+        bài_1: <a href="https://www.facebook.com/.html">Bấm để xem chi tiết...</a>  <br></br>
+
+    <h3>b liên kết anchor đến một hình ảnh</h3>
+        <a href="image.gif">text link</a>  gắn đường dẫn hình ảnh  <br></br> 
+    <h3>liên kết đến cac side bên ngoài</h3>
+        <a href="URL"text link></a>
+    <h3>liên kết đến các phần của trang</h3>
+
+
+
+</body>
+</html>

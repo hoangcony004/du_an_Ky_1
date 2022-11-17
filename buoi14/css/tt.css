@@ -1,0 +1,58 @@
+#thongtinKh{
+    width: 30%;
+    height: 500px;
+    background-color: rgb(239, 239, 239);
+    border: solid 1px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+#ttCanhan{
+    display: inline-block;
+    
+}
+.tt1{
+    display: inline-block;
+}
+p{
+    width: 150px;
+}
+h2{
+    padding-left: 130px;
+}
+#inhoaDon{
+    margin-left: 180px;
+}
+#hoaDon{
+    width: 60%;
+    height: 600px;
+    background-color: rgb(255, 245, 245);
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    border: solid 1px;
+    display: none;
+}
+#anhIphone{
+    width: 150px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+}
+#dauHoadon{
+    display: inline-block;
+    margin-left: 85px;
+}
+#thanHd{
+    margin-left: 20px;
+}
+table{
+    width: 100%;
+
+}
+table tr, th, td {
+    border: solid 1px;
+    border-collapse: collapse;
+}

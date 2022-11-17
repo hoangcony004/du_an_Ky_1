@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dang_nhap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/dangnhap.css">
+</head>
+<body>
+    <div id="wrap">
+        <form action="#" onsubmit="return validate()">
+             <h2>ĐĂNG NHẬP</h2>
+            <input id="user" class="h" type="text" placeholder="Nhập tên đăng nhập..."><br> <span class="thesp" id="e_user"></span><br></br>
+            <input id="pass" class="h" type="password" placeholder="Nhập mật khẩu..."><br> <span class="thesp" id="e_pass"></span><br></br>
+            <span  class="b">Quên <u class="c">Tài Khoản</u>/<u class="c">Mật Khẩu?</u></span><br></br>
+            <input class="a" type="submit" value="Đăng Nhập" onclick=""><br></br><br></br><br></br><br></br>
+            <div id="d"> Bạn chưa có tài khoản? <b>Tạo Tài Khoản.</b></div>
+         </form>
+
+    </div>  
+
+
+
+
+    <script>
+        function validate(){
+            let user = document.getElementById('user').value;
+            let pass = document.getElementById('pass').value;
+
+            if(user == "" || user == null){
+                document.getElementById('e_user').innerHTML = "Tên không được để trống";
+            }
+            else{
+                document.getElementById('e_user').innerHTML = "";
+            }
+            if(pass.length<8){
+                document.getElementById('e_pass').innerHTML ="Mật khẩu không được để trống";
+            }
+            else{
+                document.getElementById('e_pass').innerHTML ="";
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
