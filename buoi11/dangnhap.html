@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dang_nhap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        span{
+            color: red;
+            
+        }
+        p{
+            width: 150px;
+            display: inline-block;
+            line-height: 2px;
+        }
+        input{
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+ </head>
+ <body>
+    <form action="#" onsubmit="validate()">
+        <p>Tên đăng nhập:</p> <input id="user" type="text"><span id="e_user"></span><br><br>
+        
+        <p>Nhập mật khẩu:</p> <input id="pass" type="password"><span id="e_pass"></span><br><br>
+        
+        <p>Nhập lại mật khẩu:</p> <input id="rpass" type="password"><span id="r_pass"></span><br><br>
+        
+        <p>Nhập số điện thoại:</p> <input id="phone" type="text"><span id="e_phone"></span><br><br>
+        
+        <input type="submit" value="Đăng nhập" onclick=""><br>
+    </form>
+
+
+    <script>
+        function validate(){
+            let user = document.getElementById('user').value;
+            let pass = document.getElementById('pass').value;
+            let phone = document.getElementById('phone').value;
+            let rpass = document.getElementById('rpass').value;
+            if(user == "" || user == null){
+                document.getElementById('e_user').innerHTML = "Tên không được để trống";
+            }
+            else{
+                document.getElementById('e_user').innerHTML = "";
+            }
+            if(pass.length<8){
+                document.getElementById('e_pass').innerHTML ="Mật khẩu không được để trống";
+            }
+            else{
+                document.getElementById('e_pass').innerHTML ="";
+            }
+            if(pass != rpass){
+                document.getElementById('r_pass').innerHTML ="Mật khẩu không khớp";
+            }
+            else{
+                document.getElementById('r_pass').innerHTML ="";
+            }
+            if(isNaN(phone)){
+                text = "Số điện thoại phải là số";
+            }
+            else if(phone.length < 10 || phone.length > 10){
+                    text = "Số điện thoại chỉ có 10 số!";
+                }
+            else{
+                text = "";
+            }
+            document.getElementById('e_phone').innerHTML =text;
+    }
+
+
+
+    </script>
+ </body>
+ </html>

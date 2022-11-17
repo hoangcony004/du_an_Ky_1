@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/tt.css">
+    
+</head>
+<body>
+    <form action="">
+        <section id="thongtinKh">
+            <section id="ttCanhan">
+                <h2>Thông tin khách hàng</h2>
+                <p class="tt1">Họ tên khách hàng:</p> <input id="tenKH" type="text"><br>
+                <p class="tt1">Số điện thoại:</p> <input id="sDt" type="number"><br>
+                <p class="tt1">Địa chỉ:</p> <textarea id="diaChi" cols="20" rows="3"></textarea><br>
+                <p class="tt1">Tên sản phẩm:</p> <input id="tenSp" type="text" name=""><br>
+                <tr>
+                    <td><p class="tt1">Hãng sản suất:</p></td>
+                    <td>
+                        <input type="radio" name="hangSx" class="hangSx" value="Apple">Apple
+                        <input type="radio" name="hangSx" class="hangSx" value="SamSung">SamSung
+                        <input type="radio" name="hangSx" class="hangSx" value="Nokia">Nokia
+                        <input type="radio" name="hangSx" class="hangSx" value="Sony">Sony
+                    </td><br>
+                </tr>
+                <p class="tt1">Đơn giá:</p> <input id="donGia" type="number"><br>
+                <p class="tt1">Số lượng:</p> <input id="soLuong" type="number"><br>
+                <div id="inhoaDon">
+                    <button class="tt1" type="reset" value="Reset">Đặt lại</button>
+                    <input class="tt1" type="button" value="In hóa đơn" onclick="inHoaDon()">
+                </div>
+            </section>
+        </section>
+    </form>
+    <form action="">
+        <section id="hoaDon">
+                <img id="anhIphone" src="img/iphone_11_1661318461076_1661318461412_1661318461412.webp" alt="">
+                <div id="dauHoadon">
+                    <div><h1>NORTHERN VIỆT NAM</h1></div>
+                    <div>Chuyên cung cấp các giải pháp phần mềm</div>
+                    <div>Địa chỉ:Lê Trọng Tấn,Hà Đông,HN</div>
+                    <div>ĐT Hotline:0913556758</div>
+                    <div>Website:non.vn</div>
+                    <div><h1>HÓA ĐƠN BÁN LẺ</h1></div>
+                </div>
+                <div id="thanHd">
+                    <h4>Họ tên khách hàng: <span id="name"></span></h4>
+                    <h4>Điện thoại: <span id="phone"></span></h4>
+                    <h4>Địa chỉ: <span id="address"></span></h4>
+                </div>
+            <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên hàng hóa và quy cách sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Giảm giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><p id="sp1"></p></td>
+                        <td><p id="sl1"></p></td>
+                        <td><p id="dg1"></p></td>
+                        <td><p id="gg1"></p></td>
+                        <td><p id="tht1"></p></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><p id="sp2"></p></td>
+                        <td><p id="sl2"></p></td>
+                        <td><p id="dg2"></p></td>
+                        <td><p id="gg2"></p></td>
+                        <td><p id="tht2"></p></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><p id="sp3"></p></td>
+                        <td><p id="sl3"></p></td>
+                        <td><p id="dg3"></p></td>
+                        <td><p id="gg3"></p></td>
+                        <td><p id="tht3"></p></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><p id="sp4"></p></td>
+                        <td><p id="sl4"></p></td>
+                        <td><p id="dg4"></p></td>
+                        <td><p id="gg4"></p></td>
+                        <td><p id="tht4"></p></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><p id="sp5"></p></td>
+                        <td><p id="sl5"></p></td>
+                        <td><p id="dg5"></p></td>
+                        <td><p id="gg5"></p></td>
+                        <td><p id="tht5"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Tổng cộng</td>
+                        <td><p id="sp6"></p></td>
+                        <td><p id="sl6"></p></td>
+                        <td><p id="dg6"></p></td>
+                        <td><p id="gg6"></p></td>
+                        <td><p id="tht6"></p></td>
+                    </tr>
+            </table>
+        </section>
+    </form>
+
+
+    <script>
+        function inHoaDon(){
+            document.getElementById("hoaDon").style.display = 'block';
+            var tenKH = document.getElementById('tenKH').value;
+            var soDt = document.getElementById('sDt').value;
+            var diaChi = document.getElementById('diaChi').value;
+            var tenSp = document.getElementById('tenSp').value;
+           // var hangSx = document.getElementById('input[name = "hangSx"]:checked');
+            var donGia = document.getElementById('donGia').value;
+            var soLuong = document.getElementById('soLuong').value;
+
+            //hoa don
+            var sp1 = document.getElementById('sp1');
+            var sl1 = document.getElementById('sl1');
+            var dg1 = document.getElementById('dg1');
+            var gg1 = document.getElementById('gg1');
+            var tt1 = document.getElementById('tht1');
+
+
+            var name = document.getElementById('name');
+            var phone = document.getElementById('phone');
+            var address = document.getElementById('address');
+
+
+
+            sp1.innerHTML = tenSp;
+            sl1.innerHTML = soLuong;
+            dg1.innerHTML = donGia + "đ";
+            gg1.innerHTML = gg1.value *100 +"%";
+            tt1.innerHTML = soLuong*donGia - (soLuong*donGia*gg1.value);
+
+            name.innerHTML = tenKH;
+            phone.innerHTML = soDt;
+            address.innerHTML = diaChi;
+        }
+
+
+    </script>
+
+</body>
+</html>

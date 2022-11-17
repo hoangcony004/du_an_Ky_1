@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="showclock" onload="showtime()"></div>
+
+
+
+
+
+
+
+    <script>
+        function showtime(){
+            //lấy thời gian hệ thống dùng hàm Date:
+            var date = new Date();
+            //lay gio
+            var gio = date.getHours();
+            //lay phut
+            var phut = date.getMinutes();
+            //lay giay
+            var giay = date.getSeconds();
+            //lay miligiay
+            var miligiay = date.getMilliseconds();
+            var tg = "AM"
+
+            if(gio == 0){
+                gio =12;
+            }
+            if(gio>12){
+                tg = "PM"
+            }
+            gio = (gio < 10)? "0" + gio : gio;
+            phut = (phut < 10)? "0" + phut : phut;
+            giay = (giay < 10)? "0" + giay : giay;
+            miligiay = (miligiay < 10)? "0" + miligiay : miligiay;
+
+            var time = gio + ":" + phut + ":" + giay + ":" + miligiay +tg;
+
+            document.getElementById('showclock').innerHTML = time;
+            setTimeout(showtime, 1);
+        }
+        showtime();
+
+
+
+
+
+    </script>
+</body>
+</html>

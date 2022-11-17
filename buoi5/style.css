@@ -1,0 +1,18 @@
+h1{
+    color: blue;
+    background-color: rgb(151, 151, 241);
+}
+
+*{
+    color: rgb(233, 189, 132);
+    text-decoration: none;
+    font-size: 2em;
+    background-color: aqua;
+}
+a:link{
+    color: rgb(160, 182, 202);
+
+}
+a:visited{
+    color: brown;
+}
